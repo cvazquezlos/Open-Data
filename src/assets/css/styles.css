@@ -1,0 +1,61 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    margin: auto;
+    min-height: 200px;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+header {
+    border-bottom-width: 2px;
+    border-color: black; 
+    border-bottom-style: solid;
+}
+
+header > .header {
+    height: 150px;
+    background-color: #6298C9;
+}
+
+header > div > .pull-right {
+    padding-top: 55px;
+    font-size: 25px;
+}
+
+header > div > div > .help {
+    background-color: #D0E0E3;
+}
+
+.background {
+    background-color: #8AB8E1;
+}
+
+.big-text {
+    font-size: 25px;
+}
+
+.search {
+    font-size: 30px;
+    width: 93%;
+    height: 80px;
+}
+
+.search-button {
+    font-size: 30px;
+    height: 80px;
+    width: 6.5%;
+}

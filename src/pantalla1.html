@@ -1,221 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-      min-height:200px;
-  }
-
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
-  }
-  </style>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    <br/>
-    <br/>
-    <div class="container">
+<body>
+    <header>
+        <div class="container-fluid header">
+            <div class="pull-right">
+                <button class="help"><i class="fa fa-question-circle" aria-hidden="true"></i> | AYUDA</button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid background">
         <div class="row">
             <div class="col-md-12">
-             <form class="navar">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="search"  class="btn btn-primary">
-                        <i class="glyphicon glyphicon-search"></i>
-                    </button>
-                </form>
-            
-            
-            
+                <br>
+                <span class="big-text">
+                    Estás buscando algo relacionado con Museos... <button class="help"><i class="fa fa-home" aria-hidden="true"></i> | Volver a la página principal</button>
+                </span>
+                <br><br>
+                        <span>
+                            <input type="text" class="form-control search" placeholder="Buscar nuevo término..." style="display: inline;">
+                            <button type="search" class="btn btn-primary search-button"><i class="glyphicon glyphicon-search" style="display: inline;"></i></button>
+                        </span>
             </div>
-     <div class="col-md-3">
-
-
-             <p class="lead">Filtrar Productos</p>
+            <div class="col-md-3">
+                <p class="lead">Filtrar Productos</p>
                 <div class="list-group">
                     <p class="list-group-item"><b>Precio</b></p>
-                    <a href="#" class="list-group-item"><RadioButton>Gratis</RadioButton><span class="badge"></span></a>
-                    <a href="#" class="list-group-item"><RadioButton>+10€</RadioButton> <span class="badge"></span></a>
-                    <a href="#" class="list-group-item"><RadioButton>-10€</RadioButton> <span class="badge"></span></a>
-                    <a href="#" class="list-group-item"><RadioButton>Todo</RadioButton> <span class="badge"></span></a>
+                    <a href="#" class="list-group-item">
+                        <RadioButton>Gratis</RadioButton><span class="badge"></span></a>
+                    <a href="#" class="list-group-item">
+                        <RadioButton>+10€</RadioButton> <span class="badge"></span></a>
+                    <a href="#" class="list-group-item">
+                        <RadioButton>-10€</RadioButton> <span class="badge"></span></a>
+                    <a href="#" class="list-group-item">
+                        <RadioButton>Todo</RadioButton> <span class="badge"></span></a>
                     <p class="list-group-item"><b>Cercanía</b></p>
-                    <a href="#" class="list-group-item"><RadioButton>+10Km</RadioButton><span class="badge"></span></a>
-                    <a href="#" class="list-group-item"><RadioButton>-10Km</RadioButton> <span class="badge"></span></a>
-                    <a href="#" class="list-group-item"><RadioButton>Todo</RadioButton> <span class="badge"></span></a>
+                    <a href="#" class="list-group-item">
+                        <RadioButton>+10Km</RadioButton><span class="badge"></span></a>
+                    <a href="#" class="list-group-item">
+                        <RadioButton>-10Km</RadioButton> <span class="badge"></span></a>
+                    <a href="#" class="list-group-item">
+                        <RadioButton>Todo</RadioButton> <span class="badge"></span></a>
                     <p class="list-group-item"><b>Temática</b></p>
-                    <a href="#" class="list-group-item"><RadioButton>Todo</RadioButton><span class="badge"></span></a>
-                    <a href="#" class="list-group-item"><RadioButton>Cine</RadioButton> <span class="badge"></span></a>
-                    <a href="#" class="list-group-item"><RadioButton>Teatro</RadioButton> <span class="badge"></span></a>
-                    <a href="#" class="list-group-item"><RadioButton>Museos</RadioButton> <span class="badge"></span></a>
-                    
-                   
-                   
-               
-        </div>
+                    <a href="#" class="list-group-item">
+                        <RadioButton>Todo</RadioButton><span class="badge"></span></a>
+                    <a href="#" class="list-group-item">
+                        <RadioButton>Cine</RadioButton> <span class="badge"></span></a>
+                    <a href="#" class="list-group-item">
+                        <RadioButton>Teatro</RadioButton> <span class="badge"></span></a>
+                    <a href="#" class="list-group-item">
+                        <RadioButton>Museos</RadioButton> <span class="badge"></span></a>
+                </div>
             </div>
-    <br/>
-        <div class="col-md-9">
-
+            <br/>
+            <div class="col-md-9">
                 <div class="col-md-12">
-              <div class="col-md-4">
-              <div class="thumbail">
-              
-              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                  <br/>
-                  <br/>
-                  <br/>
-              </div>
-              </div>
-              <div class="col-md-8">
-             <div class="caption">
-                                
-                                <h4><a href="articulo.html">First Event</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                 <p>precio:56€,Horario:  17:00 </p>
-                                <button  >Mas Detalles</button>
-                 
-                            </div>
-              
-              </div>
-         
+                    <div class="col-md-4">
+                        <div class="thumbail">
+
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <br/>
+                            <br/>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="caption">
+
+                            <h4><a href="articulo.html">First Event</a>
+                            </h4>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>precio:56€,Horario: 17:00 </p>
+                            <button>Mas Detalles</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <br/>
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <div class="thumbail">
+
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <br/>
+                            <br/>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="caption">
+
+                            <h4><a href="articulo.html">Second event</a>
+                            </h4>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>precio:56€,Horario: 17:00 </p>
+                            <button>Mas Detalles</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <div class="thumbail">
+
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <br/>
+                            <br/>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="caption">
+
+                            <h4><a href="articulo.html">Third event</a>
+                            </h4>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>precio:56€,Horario: 17:00 </p>
+                            <button>Mas Detalles</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-4">
+                        <div class="thumbail">
+
+                            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <br/>
+                            <br/>
+                            <br/>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="caption">
+
+                            <h4><a href="articulo.html">fourth event</a>
+                            </h4>
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>precio:56€,Horario: 17:00 </p>
+                            <button>Mas Detalles</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-         <br/>
-                    
-                  <div class="col-md-12">
-              <div class="col-md-4">
-              <div class="thumbail">
-              
-              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                  <br/>
-                  <br/>
-                  <br/>
-              </div>
-              </div>
-              <div class="col-md-8">
-             <div class="caption">
-                                
-                                <h4><a href="articulo.html">Second event</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                <p>precio:56€,Horario:  17:00 </p>
-                                <button  >Mas Detalles</button> 
-                            </div>
-              
-              </div>
-         
-    </div>
-    
-        
-    
-     <div class="col-md-12">
-              <div class="col-md-4">
-              <div class="thumbail">
-              
-              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                  <br/>
-                  <br/>
-                  <br/>
-              </div>
-              </div>
-              <div class="col-md-8">
-             <div class="caption">
-                                
-                                <h4><a href="articulo.html">Third event</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                <p>precio:56€,Horario:  17:00 </p>
-                                <button  >Mas Detalles</button>
-                            </div>
-              
-              </div>
-         
-    </div>
-     <div class="col-md-12">
-              <div class="col-md-4">
-              <div class="thumbail">
-              
-              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                  <br/>
-                  <br/>
-                  <br/>
-              </div>
-              </div>
-              <div class="col-md-8">
-             <div class="caption">
-                                
-                                <h4><a href="articulo.html">fourth event</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                 <p>precio:56€,Horario:  17:00 </p>
-                                <button  >Mas Detalles</button>
-                            </div>
-              
-              </div>
-         
-    </div>
-    </div>
-    </div>
-    </div>
-    
-     
-        
-   
-    
-    </body>
+</body>
+
 </html>
-    
-    
-    
-    
-    
     
     
