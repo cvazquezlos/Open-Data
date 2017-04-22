@@ -22,21 +22,26 @@ footer {
 
 header {
     border-bottom-width: 2px;
-    border-color: black; 
+    border-color: black;
     border-bottom-style: solid;
 }
 
-header > .header {
+header>.header {
     height: 150px;
     background-color: #6298C9;
 }
 
-header > div > .pull-right {
+header>div>.pull-right {
     padding-top: 55px;
     font-size: 25px;
 }
 
-header > div > div > .help {
+header>div>div>.help {
+    background-color: #D0E0E3;
+}
+
+.help {
+    font-size: 25px;
     background-color: #D0E0E3;
 }
 
@@ -58,4 +63,56 @@ header > div > div > .help {
     font-size: 30px;
     height: 80px;
     width: 6.5%;
+}
+
+.search-criterials {
+    background-color: #CFE2F3;
+    border-color: #2a2727;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.search-criterials>div>p {
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.header-search-criterials {
+    border-bottom-color: #2a2727;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    text-align: center;
+}
+
+.new-search {
+    font-size: 25px;
+    text-align: center;
+}
+
+.list-group-item {
+    font-size: 15px;
+    font-stretch: normal;
+    font-weight: normal;
+}
+
+.search-results {
+    background-color: #CFE2F3;
+    border-color: #2a2727;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.search-results>div>p {
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.item {
+    background-color: #9FC5E8;
+    padding-left: 5px;
+    padding-right: 5px;
 }
