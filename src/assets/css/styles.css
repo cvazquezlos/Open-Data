@@ -75,7 +75,7 @@ header>div>div>.help {
 }
 
 .search-criterials>div>p {
-    font-size: 22px;
+    font-size: 27px;
     vertical-align: middle;
 }
 
@@ -107,12 +107,10 @@ header>div>div>.help {
 }
 
 .search-results>div>p {
-    font-size: 22px;
+    font-size: 27px;
     vertical-align: middle;
 }
 
-.item {
-    background-color: #9FC5E8;
-    padding-left: 5px;
-    padding-right: 5px;
+.caption > h4 {
+    
 }
