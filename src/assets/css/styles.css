@@ -129,3 +129,10 @@ header>div>div>.help {
     border-width: 1px;
     border-style: solid;
 }
+
+.submit-search {
+    background-color: #CFE2F3;
+    font-size: 25px;
+    border-color: dimgray;
+    border-width: 1px;
+}
