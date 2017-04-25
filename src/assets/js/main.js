@@ -2,14 +2,14 @@ function redirect() {
 	var textValue = document.getElementById("text").value;
 	if((textValue == "Conciertos") || (textValue == "conciertos") || (textValue == "concierto") || (textValue == "Concierto"))
     {
-        location.pathname = "/src/concert.html"
+        location.href = "concert.html"
     }
     else if((textValue == "Museos") || (textValue == "museos") || (textValue == "museo") || (textValue == "Museo"))
     {
-        location.pathname = "/src/museum.html"
+        location.href = "museum.html"
     }
     else if((textValue == "Teatros") || (textValue == "teatros") || (textValue == "teatro") || (textValue == "Teatro"))
     {
-        location.pathname = "/src/teatro.html"
+        location.href = "teatro.html"
     }
 }

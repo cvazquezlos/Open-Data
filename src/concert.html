@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js"></script>
     <script> 
     function abrir(url) { 
     open(url,'','top=600,left=1200,width=600,height=1200') ; 
@@ -21,7 +22,7 @@
     <header>
         <div class="container-fluid header">
             <div class="pull-right">
-                <button class="help"><i class="fa fa-question-circle" aria-hidden="true"></i> | AYUDA</button>
+                <button class="btn btn-default help"><i class="fa fa-question-circle" aria-hidden="true"></i> | AYUDA</button>
             </div>
         </div>
     </header>
@@ -30,13 +31,14 @@
             <div class="col-md-12">
                 <br>
                 <span class="big-text">
-                    Estás buscando algo relacionado con Conciertos... <button class="help"><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">|Volver a la página principal</a></button>
+                    Estás buscando algo relacionado con Conciertos... <a href="index.html"><button class="btn btn-default help"><i class="fa fa-home" aria-hidden="true"></i> | Volver a la página principal</button></a>
                 </span>
                 <br><br>
-                <span>
-                    <input type="text" class="form-control search" placeholder="Buscar nuevo término..." style="display: inline;">
-                    <button type="search" class="btn btn-primary search-button"><i class="glyphicon glyphicon-search" style="display: inline;"></i></button>
-                </span>
+                <form action="javascript:redirect();">
+                    <input type="text" class="form-control search-index" id="text" placeholder="Buscar nuevo término..." style="display:inline;">
+                    <br><br>
+                    <input class="btn btn-default pull-right submit-search" type="submit" value="Buscar">
+                </form>
             </div>
             <div class="col-sm-12">
                 <br><br>
@@ -71,31 +73,7 @@
                             <input type="radio" name="proxOptions" id="optionsProx3" value="option3" checked> Todo
                         </label>
                     </div>
-                    <div class="list-group">
-                        <p class="list-group-item"><b>Temática</b></p>
-                        <label class="list-group-item">
-                            <input type="radio" name="temOptions" id="optionsTem1" value="option1"> Cine
-                        </label>
-                        <label class="list-group-item">
-                            <input type="radio" name="temOptions" id="optionsTem2" value="option2"> Teatro
-                        </label>
-                        <label class="list-group-item">
-                            <input type="radio" name="temOptions" id="optionsTem3" value="option3"> Museo
-                        </label>
-                        <label class="list-group-item">
-                            <input type="radio" name="temOptions" id="optionsTem4" value="option4"> Conciertos
-                        </label>
-                        <label class="list-group-item">
-                            <input type="radio" name="temOptions" id="optionsTem5" value="option5"> Comedias
-                        </label>
-                        <label class="list-group-item">
-                            <input type="radio" name="temOptions" id="optionsTem6" value="option6"> Parques
-                        </label>
-                        <label class="list-group-item">
-                            <input type="radio" name="temOptions" id="optionsTem7" value="option7" checked> Todo
-                        </label>
-                    </div>
-                    <button class="new-search">Actualizar la búsqueda</button>
+                    <button class="btn btn-default new-search">Actualizar la búsqueda</button>
                 </div>
                 <div class="col-sm-9 search-results">
                     <div class="header-search-criterials">

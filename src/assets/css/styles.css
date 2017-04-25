@@ -38,6 +38,8 @@ header>div>.pull-right {
 
 header>div>div>.help {
     background-color: #D0E0E3;
+    border-width: 1px;
+    border-color: dimgray;
 }
 
 .help {
@@ -135,4 +137,8 @@ header>div>div>.help {
     font-size: 25px;
     border-color: dimgray;
     border-width: 1px;
+}
+
+.recommended-events {
+    font-size: 28px;
 }
