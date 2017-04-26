@@ -5,24 +5,25 @@
     <title>Resultados búsqueda "Reina Sofía"</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/main.js"></script>
-    <script> 
-    function abrir(url) { 
-    open(url,'','top=600,left=1200,width=600,height=1200') ; 
-    } 
-</script> 
+    <script src="assets/js/popup.js"></script>
 </head>
 
 <body>
     <header>
         <div class="container-fluid header">
+            <div class="pull-left">
+                <img src="http://madriddespierta.com/wp-content/uploads/2016/11/madrid-despierta-agenda-ocio-logo-transparente.png" style="width: 15%">
+            </div>
             <div class="pull-right">
-                <button class="btn btn-default help"><i class="fa fa-question-circle" aria-hidden="true"></i> | AYUDA</button>
+                <a data-popup-open="popup-1" href="#">
+                    <button class="btn btn-default help"><i class="fa fa-question-circle" aria-hidden="true" data-popup-open="popup-1"></i> | AYUDA</button>
+                </a>
             </div>
         </div>
     </header>
@@ -80,148 +81,101 @@
                         <p>Resultados de la búsqueda</p>
                     </div>
                     <br>
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="background-color: #9FC5E8; padding-top: 15px;">
                         <div class="col-md-4">
                             <div class="thumbail">
-                                <img src="assets/img/1.png" class="img-responsive" style="width:100%" alt="Image">
+                                <img src="assets/img/1.png" class="img-responsive" style="width:100%; border-width: 1px; border-color: darkgray; border-style: solid;" alt="Image">
                             </div>
                         </div>
                         <div class="col-md-8">
                             <h2>Piedad y terror en Picasso</h2>
                             <p>¿Existe una continuidad entre Guernica y la visión de la humanidad, extraña y con frecuencia angustiada, que Picasso había desplegado a lo largo de la década anterior? ¿Cómo afectó el característico conjunto de preocupaciones del artista, cuya oscuridad por momentos parece llegar a la desesperación, al cuadro definitivo de mujeres y animales en pleno sufrimiento?.</p>
+                            <br>
                             <p>Precio: 10€</p>
-                            <p>Horario: 10:00 a 19:00</p>
-                            <button>Más detalles</button>
-                            <br><br><br>
+                            <p>Horario: Todo el mes de Abril 10:00 a 19:00</p>
+                            <br><br>
                         </div>
                     </div>
-                     <div class="col-md-12">
+                    <div class="col-md-12" style="background-color: #9FC5E8; padding-bottom: 15px; margin-bottom: 15px;">
                         <div class="col-md-4">
                             <div class="thumbail">
-                                <img src="assets/img/apolo.png" class="img-responsive" style="width:80%" alt="Image">
+                                <a href="https://www.google.es/maps/place/Museo+Nacional+Centro+de+Arte+Reina+Sof%C3%ADa/@40.4077092,-3.6959014,16.25z/data=!4m5!3m4!1s0x0:0x309814d159babf71!8m2!3d40.4079123!4d-3.6945569" target="_blank">
+                                    <img src="assets/img/reinasofia.png" class="img-responsive" style="width:100%; border-width: 1px; border-color: darkgray; border-style: solid;" alt="Image">
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="caption">
                                 <h2>Localización de la actividad</h2>
-                                <p>Dirección</p>
-                                <p>Horarios:L-09:00-18:00</p>
-                                <p>Precio: 25€</p>
-                                <p>Categoria</p>
-                                <p>Teléfono de contacto:999999999</p>
-                                <a href="javascript:abrir('mapa.html')">mostrar Ubicación</a> 
-                                
-                                <br><br><br>
+                                <p>Dirección: Calle de Santa Isabel, 52</p>
+                                <p>Categoria: Museos</p>
+                                <p>Teléfono de contacto: 917 74 10 00</p>
+                                <br><br>
                             </div>
                         </div>
                     </div>
-                    
-                    <br>
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="background-color: #9FC5E8; padding-top: 15px;">
                         <div class="col-md-4">
                             <div class="thumbail">
-                                <img src="assets/img/2.png" class="img-responsive" style="width:100%" alt="Image">
+                                <img src="assets/img/2.png" class="img-responsive" style="width:100%; border-width: 1px; border-color: darkgray; border-style: solid;" alt="Image">
                             </div>
                         </div>
                         <div class="col-md-8">
                             <h2>Kobro y Strzemiński</h2>
                             <p>Co-organizada por el Museo Reina Sofia y el Muzeum Sztuki de Lodz, la exposición aborda las distintas etapas y áreas de actividad del trabajo de estos artistas, al tiempo que cuestiona algunas nociones establecidas sobre el arte moderno.</p>
+                            <br>
                             <p>Precio: 10€</p>
-                            <p>Horario: 10:00 a 19:00</p>
-                            <button>Más detalles</button>
-                            <br><br><br>
+                            <p>Horario: Todo el mes de Mayo 10:00 a 19:00</p>
+                            <br><br>
                         </div>
                     </div>
-                     <div class="col-md-12">
+                    <br><br>
+                    <div class="col-md-12" style="background-color: #9FC5E8; padding-bottom: 15px; margin-bottom: 15px;">
                         <div class="col-md-4">
                             <div class="thumbail">
-                                <img src="assets/img/apolo.png" class="img-responsive" style="width:80%" alt="Image">
+                                <a href="https://www.google.es/maps/place/Museo+Nacional+Centro+de+Arte+Reina+Sof%C3%ADa/@40.4077092,-3.6959014,16.25z/data=!4m5!3m4!1s0x0:0x309814d159babf71!8m2!3d40.4079123!4d-3.6945569" target="_blank">
+                                    <img src="assets/img/reinasofia.png" class="img-responsive" style="width:100%; border-width: 1px; border-color: darkgray; border-style: solid;" alt="Image">
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="caption">
                                 <h2>Localización de la actividad</h2>
-                                <p>Dirección</p>
-                                <p>Horarios:L-09:00-18:00</p>
-                                <p>Precio: 25€</p>
-                                <p>Categoria</p>
-                                <p>Teléfono de contacto:999999999</p>
-                                <a href="javascript:abrir('mapa.html')">mostrar Ubicación</a> 
-                                
-                                <br><br><br>
+                                <p>Dirección: Calle de Santa Isabel, 52</p>
+                                <p>Categoria: Museos</p>
+                                <p>Teléfono de contacto: 917 74 10 00</p>
+                                <br><br>
                             </div>
                         </div>
                     </div>
-                    
-                    <br>
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="background-color: #9FC5E8; padding-top: 15px;">
                         <div class="col-md-4">
                             <div class="thumbail">
-                                <img src="assets/img/3.png" class="img-responsive" style="width:100%" alt="Image">
+                                <img src="assets/img/3.png" class="img-responsive" style="width:100%; border-width: 1px; border-color: darkgray; border-style: solid;" alt="Image">
                             </div>
                         </div>
                         <div class="col-md-8">
                             <h2>NSK del Kapital al Capital</h2>
                             <p>Asimismo, se editará una versión en español del catálogo publicado con motivo de la presentación de la exposición en la Moderna galerija en 2015, en torno a este revelador momento del colectivismo artístico, para el que se reúne documentación detallada de las obras y acciones, así como una cuidada selección de textos.</p>
                             <p>Precio: 10€</p>
-                            <p>Horario: 10:00 a 19:00</p>
-                            <button>Más detalles</button>
+                            <p>Horario: Todo el mes de Mayo 10:00 a 19:00</p>
                             <br><br><br>
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="background-color: #9FC5E8; padding-bottom: 15px; margin-bottom: 15px;">
                         <div class="col-md-4">
                             <div class="thumbail">
-                                <img src="assets/img/apolo.png" class="img-responsive" style="width:80%" alt="Image">
+                                <a href="https://www.google.es/maps/place/Museo+Nacional+Centro+de+Arte+Reina+Sof%C3%ADa/@40.4077092,-3.6959014,16.25z/data=!4m5!3m4!1s0x0:0x309814d159babf71!8m2!3d40.4079123!4d-3.6945569" target="_blank">
+                                    <img src="assets/img/reinasofia.png" class="img-responsive" style="width:100%; border-width: 1px; border-color: darkgray; border-style: solid;" alt="Image">
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="caption">
                                 <h2>Localización de la actividad</h2>
-                                <p>Dirección</p>
-                                <p>Horarios:L-09:00-18:00</p>
-                                <p>Precio: 25€</p>
-                                <p>Categoria</p>
-                                <p>Teléfono de contacto:999999999</p>
-                                <a href="javascript:abrir('mapa.html')">mostrar Ubicación</a> 
-                                
-                                <br><br><br>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="col-md-12">
-                        <div class="col-md-4">
-                            <div class="thumbail">
-                                <img src="assets/img/4.png" class="img-responsive" style="width:100%" alt="Image">
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <h2>Un lugar para el cuerpo</h2>
-                            <p>Durante el periodo expositivo se activarán copias de exposición (2014) de varios de los elementos que componen 1. Werksatz [Primera serie de obras, 1963–1969], una obra emblemática que requiere de la participación del público y en la que el artista introduce muchas de las ideas esenciales de su trayectoria. La activación la realizarán mediadores formados por el propio artista.</p>
-                            <p>Precio: 10€</p>
-                            <p>Horario: 10:00 a 19:00</p>
-                            <button>Más detalles</button>
-                            <br><br><br>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="col-md-4">
-                            <div class="thumbail">
-                                <img src="assets/img/apolo.png" class="img-responsive" style="width:80%" alt="Image">
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="caption">
-                                <h2>Localización de la actividad</h2>
-                                <p>Dirección</p>
-                                <p>Horarios:L-09:00-18:00</p>
-                                <p>Precio: 25€</p>
-                                <p>Categoria</p>
-                                <p>Teléfono de contacto:999999999</p>
-                                <a href="javascript:abrir('mapa.html')">mostrar Ubicación</a> 
-                                
-                                <br><br><br>
+                                <p>Dirección: Calle de Santa Isabel, 52</p>
+                                <p>Categoria: Museos</p>
+                                <p>Teléfono de contacto: 917 74 10 00</p>
                             </div>
                         </div>
                     </div>
@@ -229,6 +183,13 @@
             </div>
         </div>
         <br>
+    </div>
+    <div class="popup" data-popup="popup-1">
+        <div class="popup-inner">
+            <h2>Ayuda - ¿Cómo utilizar la aplicación?</h2>
+            <p>Simplemente, introduzca un término en el buscador y clique sobre "Buscar". A continuación, observará los resultados de su búsqueda.</p>
+            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+        </div>
     </div>
 </body>
 
